@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Bulma!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="all.min.css">
 </head>
 
 <body>
@@ -20,11 +21,283 @@
             <button class="button is-link">Button</button>
         </div>
     </section>
-    <section>
-        <div class="columns">
-            <div class="column has-background-grey-lighter is-narrow">First column</div>
-            <div class="column has-background-danger-light">Second column</div>
+    <section class="section">
+        <div class="columns is-2">
+            <div class="column ">
+                <div class="has-background-grey-lighter">
+                    No gap
+                </div>
+            </div>
+            <div class="column">
+                <div class="has-background-danger-light">
+                    No gap
+                </div>
+            </div>
+            <div class="column">
+                <div class="has-background-grey-lighter">
+                    No gap
+                </div>
+            </div>
+            <div class="column">
+                <div class="has-background-danger-light">
+                    No gap
+                </div>
+            </div>
         </div>
+    </section>
+    <section class="section has-background-grey-lighter">
+        <div class="block">
+            This text is within a <strong>block</strong>.
+        </div>
+        <div class="block">
+            This text is within a <strong>second block</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+        </div>
+        <div class="block">
+            This text is within a <strong>third block</strong>. This block has no margin at the bottom.
+        </div>
+    </section>
+    <section class="section">
+        <div class="box">
+            I'm in a box.
+        </div>
+        <div class="box">
+            I'm in a box.
+        </div>
+    </section>
+    <section class="section">
+        <div class="columns is-centered">
+            <div class="column is-half">
+
+                <form class="box">
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control">
+                            <input class="input" type="email" placeholder="e.g. alex@example.com">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Password</label>
+                        <div class="control">
+                            <input class="input" type="password" placeholder="********">
+                        </div>
+                    </div>
+
+                    <button class="button is-primary">Sign in</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <p class="buttons">
+            <button class="button">
+                <span class="icon is-small">
+                    <i class="fas fa-bold"></i>
+                </span>
+            </button>
+            <button class="button">
+                <span class="icon is-small">
+                    <i class="fas fa-italic"></i>
+                </span>
+            </button>
+            <button class="button">
+                <span class="icon is-small">
+                    <i class="fas fa-underline"></i>
+                </span>
+            </button>
+        </p>
+        <p class="buttons">
+            <button class="button">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+            </button>
+            <button class="button is-primary">
+                <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                </span>
+                <span>@jgthms</span>
+            </button>
+            <button class="button is-success">
+                <span class="icon is-small">
+                    <i class="fas fa-check"></i>
+                </span>
+                <span>Save</span>
+            </button>
+            <button class="button is-danger is-outlined">
+                <span>Delete</span>
+                <span class="icon is-small">
+                    <i class="fas fa-times"></i>
+                </span>
+            </button>
+        </p>
+        <p class="buttons">
+            <button class="button is-small">
+                <span class="icon is-small">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+            </button>
+            <button class="button">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+            </button>
+            <button class="button is-medium">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+            </button>
+            <button class="button is-large">
+                <span class="icon is-medium">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+            </button>
+        </p>
+    </section>
+    <section class="section">
+        <button class="delete is-small"></button>
+        <button class="delete"></button>
+        <button class="delete is-medium"></button>
+        <button class="delete is-large"></button>
+    </section>
+    <section class="section">
+        <div class="block">
+            <span class="tag is-success">
+              Hello World
+              <button class="delete is-small"></button>
+            </span>
+          </div>
+          
+          <div class="notification is-danger">
+            <button class="delete"></button>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </div>
+          
+          <article class="message is-info">
+            <div class="message-header">
+              Info
+              <button class="delete"></button>
+            </div>
+            <div class="message-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+            </div>
+          </article>
+    </section>
+    <section class="section">
+        <nav class="breadcrumb is-small" aria-label="breadcrumbs">
+            <ul>
+              <li>
+                <a href="#">
+                  <span class="icon is-small">
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                  </span>
+                  <span>Bulma</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon is-small">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                  </span>
+                  <span>Documentation</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon is-small">
+                    <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+                  </span>
+                  <span>Components</span>
+                </a>
+              </li>
+              <li class="is-active">
+                <a href="#">
+                  <span class="icon is-small">
+                    <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+                  </span>
+                  <span>Breadcrumb</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="breadcrumb is-medium" aria-label="breadcrumbs">
+            <ul>
+              <li>
+                <a href="#">
+                  <span class="icon is-small">
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                  </span>
+                  <span>Bulma</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon is-small">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                  </span>
+                  <span>Documentation</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon is-small">
+                    <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+                  </span>
+                  <span>Components</span>
+                </a>
+              </li>
+              <li class="is-active">
+                <a href="#">
+                  <span class="icon is-small">
+                    <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+                  </span>
+                  <span>Breadcrumb</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="breadcrumb is-large" aria-label="breadcrumbs">
+            <ul>
+              <li>
+                <a href="#">
+                  <span class="icon is-small">
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                  </span>
+                  <span>Bulma</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon is-small">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                  </span>
+                  <span>Documentation</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon is-small">
+                    <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+                  </span>
+                  <span>Components</span>
+                </a>
+              </li>
+              <li class="is-active">
+                <a href="#">
+                  <span class="icon is-small">
+                    <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+                  </span>
+                  <span>Breadcrumb</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
     </section>
 </body>
 
